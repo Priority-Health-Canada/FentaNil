@@ -2,10 +2,10 @@ import React from 'react';
 
 function Home() {
   return (
-    <div className="container mt-5">
-      <h1>Welcome to Our Product</h1>
-      <p>This is a brief introduction to our product.</p>
-    </div>
+    <section id="home" className="content-section">
+      <h1>Home</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
   );
 }
 

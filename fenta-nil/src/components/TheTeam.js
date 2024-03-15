@@ -2,10 +2,10 @@ import React from 'react';
 
 function TheTeam() {
   return (
-    <div className="container mt-5">
-      <h1>Welcome to Our Product</h1>
-      <p>This is a brief introduction to our product.</p>
-    </div>
+    <section id="the-team" className="content-section">
+      <h1>The Team</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis.</p>
+    </section>
   );
 }
 

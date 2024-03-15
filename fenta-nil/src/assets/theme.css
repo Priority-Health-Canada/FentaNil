@@ -1,0 +1,87 @@
+/* src/assets/theme.css */
+
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Great+Vibes&display=swap');
+
+/* Theme colors */
+:root {
+  --primary-color: #1f4068; /* Dark blue */
+  --text-color: #bbe1fa; /* Light blue */
+  --background-color: #1b1b2f; /* Very dark blue, almost black */
+  --nav-item-color: #1f4068; /* Dark blue */
+  --nav-item-hover-color: #3282b8; /* Bright blue */
+}
+
+/* Overall body styling */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar custom styling */
+.navbar-custom {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem; /* Ensure proper spacing */
+}
+
+/* Logo text styling */
+.logo-text {
+  font-family: 'Great Vibes', cursive; /* Cursive font for the logo text */
+  color: var(--text-color);
+  font-size: 3rem; /* Adjust the size as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Adds depth to text */
+}
+
+/* Nav link styling */
+.nav-link {
+  color: var(--text-color) !important;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--nav-item-hover-color) !important;
+}
+
+/* Spacing between navigation items */
+.nav-item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.content-section {
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+  
+  /* Footer styling */
+.footer {
+    background-color: var(--background-color); /* Very dark blue, almost black */
+    color: var(--text-color); /* Light blue */
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .navbar-brand .logo-text {
+    font-size: 2rem; /* Smaller logo for mobile */
+  }
+  
+  .nav-link {
+    font-size: 1rem; /* Smaller font size for nav links on mobile */
+  }
+}
+
+/* Additional styles as needed */

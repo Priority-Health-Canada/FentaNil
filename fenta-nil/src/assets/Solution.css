@@ -1,0 +1,18 @@
+/* Solution.css */
+
+.solution-image1 {
+    max-width: 100%; /* Adjust to your preference */
+    height: 700px; /* Keep the aspect ratio */
+}
+
+.solution-image2 {
+    max-width: 100%; /* Adjust to your preference */
+    height: 500px; /* Keep the aspect ratio */
+}
+
+/* For smaller screens, you may want to adjust the size down */
+@media (max-width: 768px) {
+    .solution-image {
+        max-width: 100%; /* This will make the image full width on smaller screens */
+    }
+}

@@ -1,11 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Assuming global import here is intentional
+import './assets/theme.css'; // Custom theme overrides
 
-ReactDOM.render(
-  <Router>
+const container = document.getElementById('root');
+const root = createRoot(container); // Create a root.
+
+root.render(
+  <React.StrictMode>
     <App />
-  </Router>,
-  document.getElementById('root')
+  </React.StrictMode>
 );

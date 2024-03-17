@@ -1,23 +1,27 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
+import Solution from './components/Solution';
+import WhyItMatters from './components/WhyItMatters';
+import Overview from './components/Overview';
 import TheTeam from './components/TheTeam';
-import Background from './components/Background';
+import Acheivements from './components/Acheivements';
 import Footer from './components/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './assets/theme.css'; // Custom theme overrides
+import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap styles
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
       <main>
-        <Home />
+        <Solution />
+        <Overview />
+        <WhyItMatters />
         <TheTeam />
-        <Background />
+        <Acheivements />
       </main>
       <Footer />
-    </>
+    </Router>
   );
 }
 

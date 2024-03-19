@@ -10,9 +10,39 @@
     height: 500px; /* Keep the aspect ratio */
 }
 
-/* For smaller screens, you may want to adjust the size down */
+.new-section {
+    background-color: #303841; /* Example color */
+    padding: 2rem 0; /* Padding top and bottom, but not left and right */
+    color: #ffffff; /* For text to be visible if it's a dark background */
+}
+
+.custom-padding-left {
+    padding-left: 8rem; /* Adjust the rem value to suit your design */
+}
+
+.custom-padding-right {
+    padding-right: 8rem; /* Adjust the rem value to suit your design */
+}
+
+.feature-word {
+    font-size: 2rem; /* Adjust the size as necessary */
+    font-weight: normal;
+    margin: 1rem 0; /* Spacing between the words */
+    color: #00adb5; /* Any color that suits your design */
+    text-transform: uppercase; /* Optional: makes it all uppercase */
+    /* Any other styling you want to apply */
+}
+
+
+/* Ensure that the Bootstrap responsive padding is removed */
 @media (max-width: 768px) {
-    .solution-image {
-        max-width: 100%; /* This will make the image full width on smaller screens */
-    }
+  .new-section .container-fluid.px-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .custom-padding-left, .custom-padding-right {
+    padding-left: 2rem; /* or any suitable value for smaller screens */
+    padding-right: 2rem; /* or any suitable value for smaller screens */
+  }
 }
